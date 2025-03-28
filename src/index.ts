@@ -16,12 +16,6 @@ export const usage = `## **使用**
 
 - OneBot 适配器，可在提示词中通过 @ 成员获取头像。
 
-## 致谢
-
-- [Koishi](https://koishi.chat/)
-- [钱多多 API](https://api.ifopen.ai/)
-- [Midjourney AI](https://midjourney.com/)
-
 ## QQ 群
 
 - 956758505`;
