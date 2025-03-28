@@ -414,7 +414,7 @@ export async function apply(ctx: Context, cfg: Config) {
 
     try {
       const response = await fetch(
-        `${removeTrailingSlash(cfg.baseURL)}/api/v1/ai/draw/mj/blend`,
+        `${removeTrailingSlash(cfg.baseURL)}/mj/submit/blend`,
         requestOptions
       );
 

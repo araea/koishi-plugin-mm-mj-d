@@ -1,7 +1,7 @@
 {
   "name": "koishi-plugin-mm-mj-d",
   "description": "Koishi 的 Midjourney AI 绘图插件（钱多多 API）。",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "files": [
