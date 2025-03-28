@@ -358,7 +358,7 @@ export async function apply(ctx: Context, cfg: Config) {
       if (response.ok) {
         try {
           const parsedResult = await response.json();
-          return { success: true, data: parsedResult.data };
+          return { success: true, data: parsedResult };
         } catch (jsonError) {
           return {
             success: false,
@@ -421,7 +421,7 @@ export async function apply(ctx: Context, cfg: Config) {
       if (response.ok) {
         try {
           const parsedResult = await response.json();
-          return { success: true, data: parsedResult.data };
+          return { success: true, data: parsedResult };
         } catch (jsonError) {
           return {
             success: false,
