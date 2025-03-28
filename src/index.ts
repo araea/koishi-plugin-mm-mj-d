@@ -165,7 +165,6 @@ export async function apply(ctx: Context, cfg: Config) {
   ctx
     .command("mmd.绘图 <prompt:text>", { captureQuote: false })
     .action(async ({ session }, prompt) => {
-      console.log(session.elements);
       let headImgUrls = [];
       if (session.platform === "onebot" || session.platform === "red") {
         headImgUrls = getHeadImgUrls(h.select(prompt, "at"));
@@ -199,8 +198,6 @@ export async function apply(ctx: Context, cfg: Config) {
       );
 
       prompt = `${uploadedImgUrls.join(" ")} ${prompt}`;
-      console.log(prompt);
-      return;
       const result = await submitImagine(prompt);
       if (cfg.isLog) {
         logger.info(result);
