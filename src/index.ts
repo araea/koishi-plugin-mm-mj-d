@@ -128,6 +128,11 @@ export async function apply(ctx: Context, cfg: Config) {
           logger.info(result);
         }
         if (!result.success) {
+          await sendMsg(session, `操作失败: ${result.message}`);
+          continue;
+        }
+        if (result.data.code !== 1 && result.data.code !== 22) {
+          await sendMsg(session, `操作失败: ${result.data.description}`);
           continue;
         }
         const queryResult = await executeMidjourneyTask(
@@ -208,7 +213,7 @@ export async function apply(ctx: Context, cfg: Config) {
         return sendMsg(session, `绘图失败: ${result.message}`);
       }
 
-      if (result.data.code !== 1) {
+      if (result.data.code !== 1 || result.data.code !== 22) {
         return sendMsg(session, `绘图失败: ${result.data.description}`);
       }
 
@@ -284,6 +289,11 @@ export async function apply(ctx: Context, cfg: Config) {
       if (!result.success) {
         return sendMsg(session, `绘图失败: ${result.message}`);
       }
+
+      if (result.data.code !== 1 || result.data.code !== 22) {
+        return sendMsg(session, `绘图失败: ${result.data.description}`);
+      }
+      
       const taskId = result.data.result.toString();
       const queryResult = await executeMidjourneyTask(taskId);
       if (!queryResult.success) {
