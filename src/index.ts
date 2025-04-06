@@ -213,7 +213,7 @@ export async function apply(ctx: Context, cfg: Config) {
         return sendMsg(session, `绘图失败: ${result.message}`);
       }
 
-      if (result.data.code !== 1 || result.data.code !== 22) {
+      if (result.data.code !== 1 && result.data.code !== 22) {
         return sendMsg(session, `绘图失败: ${result.data.description}`);
       }
 
@@ -290,7 +290,7 @@ export async function apply(ctx: Context, cfg: Config) {
         return sendMsg(session, `绘图失败: ${result.message}`);
       }
 
-      if (result.data.code !== 1 || result.data.code !== 22) {
+      if (result.data.code !== 1 && result.data.code !== 22) {
         return sendMsg(session, `绘图失败: ${result.data.description}`);
       }
       
