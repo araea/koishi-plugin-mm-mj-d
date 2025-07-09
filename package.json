@@ -34,6 +34,6 @@
     "绘图"
   ],
   "peerDependencies": {
-    "koishi": "^4.18.7"
+    "koishi": "^4.18.8"
   }
 }
