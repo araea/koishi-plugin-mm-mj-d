@@ -1,7 +1,7 @@
 # koishi-plugin-mm-mj-d
 
-[<img alt="github" src="https://img.shields.io/badge/github-araea/mm_mj_d-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/araea/koishi-plugin-mm-mj-d)
-[<img alt="npm" src="https://img.shields.io/npm/v/koishi-plugin-mm-mj-d.svg?style=for-the-badge&color=fc8d62&logo=npm" height="20">](https://www.npmjs.com/package/koishi-plugin-mm-mj-d)
+[![github](https://img.shields.io/badge/github-araea/mm_mj_d-8da0cb?style=for-the-badge&labelColor=555555&logo=github)](https://github.com/araea/koishi-plugin-mm-mj-d)
+[![npm](https://img.shields.io/npm/v/koishi-plugin-mm-mj-d.svg?style=for-the-badge&color=fc8d62&logo=npm)](https://www.npmjs.com/package/koishi-plugin-mm-mj-d)
 
 Koishi 的 Midjourney AI 绘图插件（[钱多多 API](https://api.ifopen.ai/)）。
 
@@ -29,19 +29,10 @@ Koishi 的 Midjourney AI 绘图插件（[钱多多 API](https://api.ifopen.ai/)�
 
 - 956758505
 
-<br>
+### License
 
-#### License
+_Licensed under either of [Apache License, Version 2.0](LICENSE-APACHE) or [MIT license](LICENSE-MIT) at your option._
 
-<sup>
-Licensed under either of <a href="../omg-mj-d/LICENSE-APACHE">Apache License, Version
-2.0</a> or <a href="../omg-mj-d/LICENSE-MIT">MIT license</a> at your option.
-</sup>
-
-<br>
-
-<sub>
-Unless you explicitly state otherwise, any contribution intentionally submitted
+_Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in this crate by you, as defined in the Apache-2.0 license, shall
-be dual licensed as above, without any additional terms or conditions.
-</sub>
+be dual licensed as above, without any additional terms or conditions._
